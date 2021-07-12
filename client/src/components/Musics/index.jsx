@@ -25,7 +25,9 @@ const Musics = () => {
         <p className="item-title">
           { value.title.length > 17 ? value.title.substr(0, 19) + '...' : value.title }
         </p>
-        <p className="item-description">{ value.description }</p>
+        <p className="item-description">
+          { value.description.length > 39 ? value.description.substr(0, 39) + '...' : value.description }
+        </p>
       </button>
     );
   });
