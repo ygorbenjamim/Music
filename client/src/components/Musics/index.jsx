@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import image from '../../assets/images/debsx.jpg';
 import './style.css';
 import api from '../../api';
 
@@ -20,7 +19,7 @@ const Musics = () => {
     return(
       <button className="item" key={value._id}>
         <div className="item-container-image">
-          <img src={ image } className="item-image"/>
+          <img src={"data:image/jpg;base64," + value.image} className="item-image"/>
         </div>
         <p className="item-title">
           { value.title.length > 17 ? value.title.substr(0, 19) + '...' : value.title }
