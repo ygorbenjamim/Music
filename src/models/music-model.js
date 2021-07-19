@@ -7,5 +7,5 @@ const dataSchema = mongo.Schema({
     category: String
 }, { timestamp: true });
 
-const Music = mongo.model('Music', dataSchema, 'music');
-module.exports = Music;
+const Sound = mongo.model('Sound', dataSchema, 'sounds');
+module.exports = Sound;

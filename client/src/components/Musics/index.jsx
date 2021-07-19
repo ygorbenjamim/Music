@@ -9,6 +9,7 @@ const Musics = () => {
   async function selectAll(){
     const response = await api.get('/music');
     setMusic(response.data);
+    console.log('It was requested to search for all songs');
   }
 
   useEffect(() => {
@@ -19,7 +20,7 @@ const Musics = () => {
     return(
       <button className="item" key={value._id}>
         <div className="item-container-image">
-          <img src={"data:image/jpg;base64," + value.image} className="item-image"/>
+          <img alt="" src={"data:image/jpg;base64," + value.image} className="item-image" />
         </div>
         <p className="item-title">
           { value.title.length > 17 ? value.title.substr(0, 19) + '...' : value.title }

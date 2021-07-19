@@ -7,7 +7,7 @@ const routes = require('./src/routes');
 const port = process.env.PORT || 3001;
 const app = express();
 
-mongo.connect('mongodb://localhost:27017/musicdb', {
+mongo.connect('mongodb://localhost:27017/sounddb', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false
