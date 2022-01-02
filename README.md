@@ -9,3 +9,6 @@
 <p align="justify">Abaixo, observamos a Home Page do Spotfy web presente em https://open.spotify.com/</p>
 
 ![Home-Spotify](https://user-images.githubusercontent.com/22685987/147881524-0e760dbb-31be-4b94-bf7b-0e856cf6f5d4.png)
+
+## Funcionalidades
+<p align="justify">Não só a página estática com o posicionamento dos items, mas todos os recursos de transição, redimencionamento e modais também estão presentes no projeto.</p>
